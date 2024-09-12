@@ -40,11 +40,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   hier de naam van de pagina  
-  <img src="images/pokemonwebsite.jpg" width="375px" alt="omschrijving van de pagina">
+  <img src="readme-images/pokemonwebsite.PNG" width="375px" alt="omschrijving van de pagina">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   hier de naam van de pagina  
-  <img src="images/pokemonwebsite2.jpg" width="375px" alt="omschrijving van de pagina">
+  <img src="readme-images/pokemonwebsite2.PNG" width="375px" alt="omschrijving van de pagina">
  
 </details>
 
@@ -56,7 +56,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na test in 2<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen:
+  mijn bevindingen waren in het begin al gelijk er is een navigatie die is double er zijn er 2 en dat is niet zo fijn voor de screenreader daarnaast was de carousel die op de pagina stond niet fijn for the screen reader want het starte vanaf het begin van de carousel en niet het midden wat staat aangegeven op het scherm.
+  bij de pokemon info pagina staat een graph die helemaal staat aangegeven met een li dat niet zo fijn is voor een screenreader
 
 </details>
 
@@ -68,13 +69,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/pokemonsitebreakdown.PNG" width="375px" alt="breakdown van de hele pagina">
 
   ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+  <img src="readme-images/" width="375px" alt="breakdown van een dynamisch deel">
 
   ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+  <img src="readme-images/" width="375px" alt="breakdown van nog een dynamisch deel">
 
 </details>
 
