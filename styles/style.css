@@ -19,13 +19,54 @@
 	--color-background:#eee;
 }
 
+/**********/
+/* Header */
+/**********/
 
 
+/*********/
+/** nav **/
+/*********/
 
+nav ul{
+	list-style: none;
+	display: grid;
+	margin: 0;
+	padding: 3%;
+	grid-template-columns:repeat(auto-fit, 8em);
+  	justify-content:center;
+  	gap:1em;
+}
 
-/****************/
-/* JOUW STYLING */
-/****************/
+nav a{
+	text-decoration: none;
+}
 
-/* jouw code */
+nav a:hover{
+	background-color: #313131;
+	transition: 0.3s;
+	color: white;
+}
 
+/********/
+/* Body */
+/********/
+body{
+	margin: 0;
+}
+.background{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	z-index: -1;
+	opacity: 1;
+}
+
+section {
+	text-align: center;
+	background-color: #313131;
+	width: 57.6%;
+	padding-bottom: 1em;
+	color: white;
+	border-radius: 0 0 1% 1%;
+}
