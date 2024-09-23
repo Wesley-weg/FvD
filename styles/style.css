@@ -34,6 +34,7 @@ nav ul{
 	display: flex;
 	margin: 0;
 	justify-content: center;
+	background-color: white;
 }
 
 nav li{
@@ -173,19 +174,16 @@ nav li:nth-of-type(5):hover a{
 
 body{
 	margin: 0;
-}
-main{
 	background: url(container_bg.png) repeat  center;
 	background-size: 30%;
-	padding-top: 1em;
-	margin-top: -0.5em;
 }
 
 
-section{
+#TCG {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	margin-top: 2em;
+	
 	
 }
 article {
@@ -198,4 +196,82 @@ article {
 	background-color: #313131;
 	border-radius: 0 0 1% 1%;
 }
+h2{
+	text-align: center;
+	color: #252734;
+}
+
+section ul{
+	display: flex;
+	flex-wrap: wrap;
+	gap: 2em;
+	justify-content: center;
+	margin-bottom: 2em;
+}
+
+section li{
+	display: grid;
+	text-decoration: none;
+	align-items: start;
+	list-style: none;
+	background-color: #313131;
+	color: white;
+	padding: 1em;
+	border-radius: 0 0 0.5em 0.5em;
+}
+li img{
+	height: 20em;
+	width: auto;
+	background-color: #616161;
+}
+li:nth-of-type(1) p{
+	text-align: center;
+	background-color: #9BCC50;
+	color: #252734;
+	border-radius: .3em;
+	width: 4em;
+}
+li:nth-of-type(2) p{
+	text-align: center;
+	background-color: #FD7D24;
+	border-radius: .3em;
+	width: 4em;
+}
+li:nth-of-type(3) p{
+	text-align: center;
+	background-color: #4592C4;
+	border-radius: .3em;
+	width: 4em;
+}
+
+footer ul{
+	display: flex;
+	margin: 0;
+	padding: 2em;
+	justify-content: space-evenly;
+	background-color: #1F1F1F;
+	color: white;
+	text-decoration: none;
+	list-style: none;
+}
+footer li{
+	display: grid;
+}
+
+footer h3{
+	margin: 0;
+	padding-bottom: 1em;
+}
+
+footer li:nth-of-type(3) h3{
+	font-size: 0.8em;
+}
+footer a{
+	text-decoration: none;
+	color: white;
+}
+footer a:hover{
+	text-decoration:underline;
+}
+
 
