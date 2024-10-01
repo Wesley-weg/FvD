@@ -26,66 +26,89 @@
 	header section{
 		position: fixed;
 		display: flex;
-		flex-wrap: initial;
 		width: 100%;
+		margin: 0;
 		bottom: 0;
 		top: 0;
 		list-style: none;
 		text-decoration: none;
 		left: -100%;
-		background-color: #616161;
+		background-color:  #313131;
 		text-align: center;
 		align-items: center;
+		justify-content: center;
+		transition: 0.5s;
+		z-index: 1;
 	}
-	header section{
-		margin: 0;
-	}
-	header section ul{
-		display: flex;
-		flex-direction:initial;
+
+	header section li{
+		flex-direction:row;
+		list-style: none;
+		padding: 2em;
+		border-bottom: solid 0.1em #616161;
 	}
 	header section a{
 		text-decoration: none;
 		color: white;
+		font-size: 2em;
 	}
 	.toonhamburger{
 		left: 0;
 		transition: 0.5s;
 		margin: 0;
+		transform: skewX(180deg);
+	}
+	header section svg{
+		height: 3em;
+		cursor: pointer;
 	}
 
 /*********/
 /** nav **/
 /*********/
 
-@media (max-width: 700px) {
-	nav li{
-		opacity: 0%;
-		width: 5%;
-		padding-left: 0;
-		padding-right: 0;
+@media (max-width: 767px) {
+	nav li:nth-of-type(2){
+		display: none!important;
+	}
+	nav li:nth-of-type(3){
+		display: none!important;
+	}
+	nav li:nth-of-type(4){
+		display: none!important;
+	}
+	nav li:nth-of-type(5){
+		display: none!important;
+	}
+	nav li:nth-of-type(6){
+		display: none!important;
 	}
  }
- @media (max-width: 700px){
+ @media (min-width: 767px){
 	#hamburger{
-		opacity: 100% !important;
+		display: none !important;
 		height: 100%;
 		
-	}
- }
- @media (max-width: 700px) {
-	nav ul{
-		background-color: #919191!important;
-
 	}
  }
 
  #hamburger {
 	display: flex;
-	position: absolute;
 	justify-content: left;
-	opacity: 0%;
+	height: 5em;
+	width: 100%;
+	padding: 0;
+	background-color: #919191;
  }
+ nav #hamburger svg{
+	position: absolute;
+	top: 1em;
+	left: 1em;
+	height: 3em;
+	width: 3em;
+	stroke: white;
+ }
+
  nav {
 	position: relative;
  }
@@ -94,6 +117,7 @@ nav ul{
 	list-style: none;
 	display: flex;
 	margin: 0;
+	padding: 0;
 	justify-content: center;
 	background-color: white;
 }
@@ -113,43 +137,43 @@ nav li a{
 	text-decoration: none;
 	color: #313131;
 }
-nav li:nth-of-type(1) img{
+nav li:nth-of-type(2) img{
 	height: 2em;
-}
-
-
-nav li:nth-of-type(2) svg{
-	height: 2em;
-	fill: #919191;
-}
-nav li:nth-of-type(2):hover svg{
-	transition: 0.4s;
-	fill: white;
 }
 
 
 nav li:nth-of-type(3) svg{
 	height: 2em;
-	stroke: none;
-	color: #919191;
+	fill: #919191;
 }
 nav li:nth-of-type(3):hover svg{
 	transition: 0.4s;
-	color: white ;
+	fill: white;
 }
 
 
 nav li:nth-of-type(4) svg{
 	height: 2em;
-	fill: #919191;
+	stroke: none;
+	color: #919191;
 }
 nav li:nth-of-type(4):hover svg{
+	transition: 0.4s;
+	color: white ;
+}
+
+
+nav li:nth-of-type(5) svg{
+	height: 2em;
+	fill: #919191;
+}
+nav li:nth-of-type(5):hover svg{
 	transition: 0.4s;
 	fill: white ;
 }
 
 
-nav li:nth-of-type(5) svg{
+nav li:nth-of-type(6) svg{
 	height: 2em;
 	fill: none;
 	stroke:currentColor;
@@ -157,45 +181,30 @@ nav li:nth-of-type(5) svg{
 	stroke-linecap: round;
 	color: #919191;
 }
-nav li:nth-of-type(5):hover svg{
+nav li:nth-of-type(6):hover svg{
 	transition: 0.4s;
 	color: white ;
 }
 
 
-nav li:nth-of-type(1) {
+nav li:nth-of-type(2) {
 	background-color: #919191;
 	color: white;
 	border-bottom: solid 0.4em #919191;
 	border-radius: 0 0 0 0.5em ;
 	cursor: pointer;
 }
-nav li:nth-of-type(1) a {
+nav li:nth-of-type(2) a {
 text-decoration: none;
 color: white;
 }
 
 
-nav li:nth-of-type(2){
+nav li:nth-of-type(3){
 	border-bottom: solid 0.4em #E3350D;
 }
-nav li:nth-of-type(2):hover{
-	background-color: #E3350D;
-	transition: 0.5s;
-}
-nav li:nth-of-type(2):hover a{
-	text-decoration: none;
-	color: white;
-	}
-
-
-
-
-nav li:nth-of-type(3){
-	border-bottom: solid 0.4em #EE6B2F;
-	}
 nav li:nth-of-type(3):hover{
-	background-color: #EE6B2F;
+	background-color: #E3350D;
 	transition: 0.5s;
 }
 nav li:nth-of-type(3):hover a{
@@ -205,11 +214,12 @@ nav li:nth-of-type(3):hover a{
 
 
 
+
 nav li:nth-of-type(4){
-	border-bottom: solid 0.4em #E6BC2F;
+	border-bottom: solid 0.4em #EE6B2F;
 	}
 nav li:nth-of-type(4):hover{
-	background-color: #E6BC2F;
+	background-color: #EE6B2F;
 	transition: 0.5s;
 }
 nav li:nth-of-type(4):hover a{
@@ -218,15 +228,29 @@ nav li:nth-of-type(4):hover a{
 	}
 
 
+
 nav li:nth-of-type(5){
-	border-bottom: solid 0.4em #4DAD5B;
-	border-radius: 0 0 0.5em 0 ;
+	border-bottom: solid 0.4em #E6BC2F;
 	}
 nav li:nth-of-type(5):hover{
-	background-color: #4DAD5B;
+	background-color: #E6BC2F;
 	transition: 0.5s;
 }
 nav li:nth-of-type(5):hover a{
+	text-decoration: none;
+	color: white;
+	}
+
+
+nav li:nth-of-type(6){
+	border-bottom: solid 0.4em #4DAD5B;
+	border-radius: 0 0 0.5em 0 ;
+	}
+nav li:nth-of-type(6):hover{
+	background-color: #4DAD5B;
+	transition: 0.5s;
+}
+nav li:nth-of-type(6):hover a{
 	text-decoration: none;
 	color: white;
 }
@@ -239,6 +263,42 @@ body{
 	margin: 0;
 	background: url(container_bg.png) repeat  center;
 	background-size: 30%;
+}
+
+main section:nth-of-type(1){
+	position: fixed;
+	color: white;
+}
+main section:nth-of-type(1) p:nth-of-type(1){
+	font-size: 1em;
+	position: absolute;
+	z-index: 1;
+	top: 5em;
+	left: 0.5em;
+	cursor: pointer;
+}
+main svg:nth-of-type(1){
+	fill: #54b564;
+	stroke: #000;
+	position: absolute;
+	height: 10em;
+	width: 10em;
+	margin: 0;
+	left: -2.2em;
+	cursor: pointer;
+}
+main section:nth-child(1) svg:hover{
+	fill: #E3350D;
+	transition: 0.5s;
+}
+main svg:nth-of-type(2){
+	stroke: white;
+	width: 4em;
+	height: 4em;
+	position: absolute;
+	left: 1em;
+	top: 2em;
+	cursor: pointer;
 }
 
 main section :nth-of-type(1) img{
@@ -302,20 +362,20 @@ li img{
 	width: auto;
 	background-color: #616161;
 }
-li:nth-of-type(1) p{
+main li:nth-of-type(1) p{
 	text-align: center;
 	background-color: #9BCC50;
 	color: #252734;
 	border-radius: .3em;
 	width: 4em;
 }
-li:nth-of-type(2) p{
+main li:nth-of-type(2) p{
 	text-align: center;
 	background-color: #FD7D24;
 	border-radius: .3em;
 	width: 4em;
 }
-li:nth-of-type(3) p{
+main li:nth-of-type(3) p{
 	text-align: center;
 	background-color: #4592C4;
 	border-radius: .3em;
@@ -332,25 +392,28 @@ footer{
 
 footer ul{
 	display: flex;
+	flex-wrap: wrap;
 	margin: 0;
 	padding: 2em;
-	justify-content: space-evenly;
+	justify-content: center;
 	background-color: #1F1F1F;
 	color: white;
 	text-decoration: none;
 	list-style: none;
+	gap: 2em;
 }
 footer li{
 	display: grid;
 }
 
-footer h3{
-	margin: 0;
-	padding-bottom: 1em;
+footer p{
+	font-size: 1.5em;
 }
 
-footer li:nth-of-type(3) h3{
+footer li:nth-of-type(3) p{
 	font-size: 0.8em;
+	margin-top: 0;
+	margin-bottom: 0;
 }
 footer a{
 	text-decoration: none;
@@ -358,6 +421,24 @@ footer a{
 }
 footer a:hover{
 	text-decoration:underline;
+}
+
+footer li:nth-of-type(2){
+	display: flex;
+	gap: 0.8em;
+}
+footer img{
+	background-color: #1F1F1F;
+	width: 3.2em;
+	height: 3em;
+}
+footer li:nth-of-type(1){
+	padding-right: 2em;
+	border-right: solid 0.1em black;
+}
+footer li:nth-of-type(3){
+	padding-left: 2em;
+	border-left: solid 0.1em black;
 }
 
 
