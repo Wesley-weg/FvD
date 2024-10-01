@@ -9,7 +9,6 @@ let xknop = document.querySelector("#x")
 
     function toonmenu(){
         balk.classList.add("toonhamburger")
-        console.log("it changed class")
     }
 
     function verbergmenu(){
