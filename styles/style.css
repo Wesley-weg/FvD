@@ -23,11 +23,72 @@
 /**********/
 /* Header */
 /**********/
-
+	header section{
+		position: fixed;
+		display: flex;
+		flex-wrap: initial;
+		width: 100%;
+		bottom: 0;
+		top: 0;
+		list-style: none;
+		text-decoration: none;
+		left: -100%;
+		background-color: #616161;
+		text-align: center;
+		align-items: center;
+	}
+	header section{
+		margin: 0;
+	}
+	header section ul{
+		display: flex;
+		flex-direction:initial;
+	}
+	header section a{
+		text-decoration: none;
+		color: white;
+	}
+	.toonhamburger{
+		left: 0;
+		transition: 0.5s;
+		margin: 0;
+	}
 
 /*********/
 /** nav **/
 /*********/
+
+@media (max-width: 700px) {
+	nav li{
+		opacity: 0%;
+		width: 5%;
+		padding-left: 0;
+		padding-right: 0;
+	}
+ }
+ @media (max-width: 700px){
+	#hamburger{
+		opacity: 100% !important;
+		height: 100%;
+		
+	}
+ }
+ @media (max-width: 700px) {
+	nav ul{
+		background-color: #919191!important;
+
+	}
+ }
+
+ #hamburger {
+	display: flex;
+	position: absolute;
+	justify-content: left;
+	opacity: 0%;
+ }
+ nav {
+	position: relative;
+ }
 
 nav ul{
 	list-style: none;
@@ -45,6 +106,7 @@ nav li{
 	padding: 2em;
 	padding-top: 1.5em;
 	padding-bottom: 1.5em;
+	cursor: pointer;
 }
 
 nav li a{
@@ -106,6 +168,7 @@ nav li:nth-of-type(1) {
 	color: white;
 	border-bottom: solid 0.4em #919191;
 	border-radius: 0 0 0 0.5em ;
+	cursor: pointer;
 }
 nav li:nth-of-type(1) a {
 text-decoration: none;
@@ -166,7 +229,7 @@ nav li:nth-of-type(5):hover{
 nav li:nth-of-type(5):hover a{
 	text-decoration: none;
 	color: white;
-	}
+}
 
 /********/
 /* Body */
@@ -178,14 +241,16 @@ body{
 	background-size: 30%;
 }
 
-
-#TCG {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	margin-top: 2em;
-	
-	
+main section :nth-of-type(1) img{
+	width: 100%;
 }
+
+main section {
+	display: flex;
+	justify-content: center;
+	margin-top: 2em;
+}
+
 article {
 	display: grid;
 	justify-content: center;
@@ -195,21 +260,26 @@ article {
 	color: white;
 	background-color: #313131;
 	border-radius: 0 0 1% 1%;
+	cursor: pointer;
 }
+
 h2{
 	text-align: center;
 	color: #252734;
 }
 
-section ul{
+
+main section ul{
 	display: flex;
 	flex-wrap: wrap;
 	gap: 2em;
 	justify-content: center;
 	margin-bottom: 2em;
+	background-color: #282828;
+	width: 100%;
 }
 
-section li{
+main section li{
 	display: grid;
 	text-decoration: none;
 	align-items: start;
@@ -218,7 +288,15 @@ section li{
 	color: white;
 	padding: 1em;
 	border-radius: 0 0 0.5em 0.5em;
+	cursor: pointer;
 }
+
+main section li:hover{
+	background-color: #E3350D;
+	transition:0.5s ;
+	background-image: linear-gradient(#E3350D , #313131);
+}
+
 li img{
 	height: 20em;
 	width: auto;
@@ -242,6 +320,14 @@ li:nth-of-type(3) p{
 	background-color: #4592C4;
 	border-radius: .3em;
 	width: 4em;
+}
+
+/**********/
+/* Footer */
+/**********/
+
+footer{
+	background-color: #1F1F1F;
 }
 
 footer ul{
