@@ -827,14 +827,60 @@ article {
 	border-radius: 0 0 1% 1%;
 	cursor: pointer;
 }
+main section:nth-of-type(3){
+	display: grid;
+	justify-content: center;
+	position: relative;
+}
+main section:nth-of-type(3) img{
+	justify-self: center;
+}
 
 h2{
 	text-align: center;
 	color: #252734;
+	z-index: -1;
+}
+
+@keyframes verander{
+	0%{
+		background-color: red;
+		opacity: 0%;
+	}
+	90%{
+		background-color: #282828;
+		opacity: 100%;
+	}
+	100%{
+	}
+}
+
+@keyframes lazer{
+	0%{
+		top: 50%;
+		opacity: 0%;
+	}
+	75%{
+		opacity: 100%;
+	}
+	80%{
+		top: 50%;
+		opacity: 0%;
+	}
+}
+main #lazers{
+	position: absolute;
+	justify-self: center;
+	top: 6em;
+	opacity: 0%;
+
+}
+.appear{
+	opacity: 100% !important;
 }
 
 
-main section ul{
+main section:nth-of-type(4) ul{
 	display: flex;
 	flex-wrap: wrap;
 	gap: 2em;
@@ -842,9 +888,11 @@ main section ul{
 	margin-bottom: 2em;
 	background-color: #282828;
 	width: 100%;
+	opacity: 0%;
+	animation-fill-mode: forwards;
 }
 
-main section li{
+main section:nth-of-type(4) li{
 	display: grid;
 	text-decoration: none;
 	align-items: start;
@@ -856,7 +904,7 @@ main section li{
 	cursor: pointer;
 }
 
-main section li:hover{
+main section:nth-of-type(4) li:hover{
 	background-color: #E3350D;
 	transition:0.5s ;
 	background-image: linear-gradient(#E3350D , #313131);
