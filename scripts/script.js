@@ -21,7 +21,7 @@ let lijst = document.querySelector("#lijst")
 
     function verander(){
         pokeball.src = ("images/pokeballopen.png")
-        lijst.style.animation = "verander 1s"
-        document.querySelector("#lazers").style.animation = "lazer 1s"
+        document.querySelector("#lazers").style.animation = "lazer 0.7s"
+        lijst.style.animation = "verander 1.5s"
         lijst.classList.add("appear")
     }

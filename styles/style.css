@@ -19,7 +19,7 @@
 	--color-background:#eee;
 	font-family: "Roboto", arial, sans-serif;
 }
-
+/*https://developer.mozilla.org/en-US/docs/Web/CSS/:focus-visible focus state voor de website's a elementen*/
 a:focus-visible{
 	outline: 0.2em solid white;
 	border-radius: 0.5em;
@@ -489,6 +489,8 @@ body{
 	margin-bottom: 0;
 	border-radius: 2em;
 }
+
+/*https://www.w3schools.com/CSS/css_grid.asp hulp met de grid layout */
 #pokedex section:nth-of-type(5) li{
 	display: grid;
 	text-decoration: none;
@@ -891,7 +893,7 @@ h2{
 		background-color: red;
 		opacity: 0%;
 	}
-	90%{
+	95%{
 		background-color: #282828;
 		opacity: 100%;
 	}
