@@ -39,11 +39,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   https://www.pokemon.com/nl/
 
   #### Screenshot(s) van de eerste pagina (small screen): 
-  hier de naam van de pagina  
+  official pokemon homepage
   <img src="readme-images/pokemonwebsite.PNG" width="375px" alt="omschrijving van de pagina">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  hier de naam van de pagina  
+  Pokedex page 
   <img src="readme-images/pokemonwebsite2.PNG" width="375px" alt="omschrijving van de pagina">
  
 </details>
@@ -72,10 +72,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <img src="readme-images/pokemonsitebreakdown.PNG" width="375px" alt="breakdown van de hele pagina">
 
   ### dynamisch deel (bijv menu): 
-  <img src="readme-images/" width="375px" alt="breakdown van een dynamisch deel">
+  <img src="readme-images/menubreakdown.png" width="375px" alt="breakdown van het dynamisch menu">
 
   ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/" width="375px" alt="breakdown van nog een dynamisch deel">
+  <img src="readme-images/filterbreakdown.png" width="375px" alt="breakdown van nog een dynamisch deel">
 
 </details>
 
@@ -89,26 +89,18 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 1<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
-
-  ### Agenda voor meeting
-  samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  voor de navigatie ging in het begin wel goed maar naarmate dat ik begon met svg was het even kijken hoe dat in elkaar zat toen na het vragen aan een studenten assistent kwam ik achter dat het gewoon in de html gezet kan worden<img src="readme-images/htmlsvg.PNG">
+  daarnaast ging de navigatie wel
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Achtergrond image via css
+  je kon in de css een background:url("image"); gebruiken voor een background image dat mee scaled
+
+  - beste manier om de nav te creeëren
+  bij de nav kan je het beste een grid maken en als je de hover wilt doen moet je per item selecteren 
 
 </details>
 
@@ -122,25 +114,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+ hier zat ik heel erg te proberen mijn eerste grid responsive te maken dat ik uiteindelijk heb veranderd naar flex ook al bleek dat niet het probleem te zijn maar was het dat de img 1 groote was dat niet mee wilde verkleinen<img src="readme-images/1stegrid.png"><img src="readme-images/code1stegrid.png">
 
-
-  ### Agenda voor meeting
-  samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
+  - beter en sneller om in de mobiele versie te beginnen en dan responsive maken voor desktop
+  - zet de h1 , h2 en h3 in een betere volgorde
 - ...
 
 </details>
@@ -155,7 +137,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na test in 9<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+  de screenreader skipt door letters heen(engels naar nederlands is waarschijnlijk het probleem)
+  nav svg geeft bij elke navigatie een img aan
+  de screenreader geeft aan dat het nederlands is maar spreekt het engels uit
+  verander de pokemon text het klopt niet met de context
 
 </details>
 
@@ -169,26 +154,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
-
-  ### Agenda voor meeting
-  samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  het maken van mobiel formaat ging best goed geen last van gehad en kwam er goed uit ook al is er aangegeven dat van desktop naar mobiel doen vrij lang en lastig is. <img src="readme-images/menumobiel.PNG">
+  de plek waar ik veel moeite mee had was de zoekbalk op de pokedex pagina om die samen met de svg ernaast responsive te krijgen uiteindelijk was het dat de width een vol gezet aantal was en niet scalable samen met dat de text hetzelfde probleem had waardoor alles uit het scherm of alleen dat stukje over het volle scherm gaat.<img src="readme-images/mobielzoek.PNG">
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - voor de hamburger menu gebruik display: none; anders leest de screenreader er over heen
 
 </details>
 
